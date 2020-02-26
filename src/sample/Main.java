@@ -2,6 +2,7 @@ package sample;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -21,9 +22,17 @@ public class Main extends Application {
 
         AnchorPane anchorPane = new AnchorPane();
         Label label = new Label("I'm a label");
+        label.setLayoutX(200);
+        label.setLayoutY(300);
+
+        Button button = new Button("Button");
+        label.setLayoutX(100);
+        label.setLayoutY(200);
+
 
 
         anchorPane.getChildren().add(label);
+        anchorPane.getChildren().add(button);
         stage.setScene(new Scene(anchorPane, 500, 500));
 
         stage.show();
