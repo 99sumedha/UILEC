@@ -1,4 +1,4 @@
-package LEC4;
+package lec4;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

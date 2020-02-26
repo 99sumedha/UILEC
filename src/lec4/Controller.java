@@ -1,4 +1,4 @@
-package LEC4;
+package lec4;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
