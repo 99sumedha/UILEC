@@ -26,14 +26,14 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
         AnchorPane anchorPane = new AnchorPane();
-        Label label = new Label("I'm a label");
-        label.setLayoutX(200);
-        label.setLayoutY(300);
-
-        Button button = new Button("Button");
-        button.setStyle("-fx-background-color: blue; -fx-text-fill: white");
-        label.setLayoutX(100);
-        label.setLayoutY(200);
+//        Label label = new Label("I'm a label");
+//        label.setLayoutX(200);
+//        label.setLayoutY(300);
+//
+//        Button button = new Button("Button");
+//        button.setStyle("-fx-background-color: blue; -fx-text-fill: white");
+//        label.setLayoutX(100);
+//        label.setLayoutY(200);
 
 
 
