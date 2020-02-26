@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UILEC4.iml" filepath="$PROJECT_DIR$/UILEC4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UILEC.iml" filepath="$PROJECT_DIR$/UILEC.iml" />
     </modules>
   </component>
 </project>
