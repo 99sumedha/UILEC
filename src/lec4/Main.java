@@ -12,6 +12,25 @@ import java.util.Scanner;
 
 public class Main extends Application {
     public static void main(String[] args) {
+
+
+        launch();
+
+    }
+
+
+
+
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        System.out.println("Inside the start method!");
+        Stage stage = primaryStage;
+
+        Parent root = FXMLLoader.load(getClass().getResource("addCustomer.fxml"));
+
+        AnchorPane anchorPane = new AnchorPane();
+
         Scanner sc = new Scanner(System.in);
         Menu:
         while (true) {
@@ -26,23 +45,23 @@ public class Main extends Application {
             switch (option) {
                 case "A":
                 case "a":
-                    Controller.addCustomer();
+                    stage.setScene(new Scene(root));
                     break;
                 case "V":
                 case "v":
-                    Controller.viewSeats();
+                    stage.setScene(new Scene(root));
                     break;
                 case "E":
                 case "e":
-                    Controller.viewEmptySeats();
+                    stage.setScene(new Scene(root));
                     break;
                 case "D":
                 case "d":
-                    Controller.deleteBookedSeat();
+                    stage.setScene(new Scene(root));
                     break;
                 case "F":
                 case "f":
-                    Controller.findSeatByCustomerName();
+                    stage.setScene(new Scene(root));
                     break;
                 case "Q":
                 case "q":
@@ -51,18 +70,7 @@ public class Main extends Application {
                     System.out.println("Invalid input");
             }
         }
-        launch();
-    }
 
-
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        System.out.println("Inside the start method!");
-        Stage stage = primaryStage;
-
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-
-        AnchorPane anchorPane = new AnchorPane();
 //        Label label = new Label("I'm a label");
 //        label.setLayoutX(200);
 //        label.setLayoutY(300);
@@ -75,7 +83,7 @@ public class Main extends Application {
 
 //        anchorPane.getChildren().add(label);
 //        anchorPane.getChildren().add(button);
-        stage.setScene(new Scene(root));
+
 //        stage.setScene(new Scene(anchorPane, 500, 500));
 
         stage.show();
