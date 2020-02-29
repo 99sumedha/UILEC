@@ -6,13 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox       fx:id="addCustomer"
+<FlowPane   fx:id="allSeats"
             xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lec4.AddCustomer"
+            fx:controller="lec4.ViewAllSeats"
             prefHeight="400.0" prefWidth="600.0">
 
-    <Button>Button 1</Button>
-
-
-</VBox>
+</FlowPane>

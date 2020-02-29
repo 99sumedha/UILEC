@@ -27,7 +27,9 @@ public class Main extends Application {
         System.out.println("Inside the start method!");
         Stage stage = primaryStage;
 
-        Parent root = FXMLLoader.load(getClass().getResource("addCustomer.fxml"));
+        Parent add = FXMLLoader.load(getClass().getResource("addCustomer.fxml"));
+        Parent viewSeat = FXMLLoader.load(getClass().getResource("viewEmptySeats.fxml"));
+
 
         AnchorPane anchorPane = new AnchorPane();
 
@@ -45,24 +47,24 @@ public class Main extends Application {
             switch (option) {
                 case "A":
                 case "a":
-                    stage.setScene(new Scene(root));
+                    stage.setScene(new Scene(add));
                     break;
                 case "V":
                 case "v":
-                    stage.setScene(new Scene(root));
+                    stage.setScene(new Scene(viewSeat));
                     break;
-                case "E":
-                case "e":
-                    stage.setScene(new Scene(root));
-                    break;
-                case "D":
-                case "d":
-                    stage.setScene(new Scene(root));
-                    break;
-                case "F":
-                case "f":
-                    stage.setScene(new Scene(root));
-                    break;
+//                case "E":
+//                case "e":
+//                    stage.setScene(new Scene(add));
+//                    break;
+//                case "D":
+//                case "d":
+//                    stage.setScene(new Scene(add));
+//                    break;
+//                case "F":
+//                case "f":
+//                    stage.setScene(new Scene(add));
+//                    break;
                 case "Q":
                 case "q":
                     break Menu;

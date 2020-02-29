@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="delete" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lec4.DeleteBookedSeat">
+
+    <Button onAction="#deleteBookedSeat" style="-fx-background-color: red;">Button 1</Button>
+    <Button>Button 2</Button>
+
+</FlowPane>

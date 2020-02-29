@@ -2,12 +2,10 @@ package lec4;
 
 import javafx.fxml.FXML;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.VBox;
 
-public class AddCustomer {
+public class ViewEmptySeats {
     @FXML
-    private VBox addCustomer;
-
+    private FlowPane emptySeats;
 
 
 }
