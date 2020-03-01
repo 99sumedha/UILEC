@@ -9,30 +9,20 @@ import javafx.stage.Stage;
 
 import java.util.Scanner;
 
-
 public class Main extends Application {
     public static void main(String[] args) {
-
-
         launch();
-
     }
-
-
-
-
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        System.out.println("Inside the start method!");
         Stage stage = primaryStage;
 
-        Parent add = FXMLLoader.load(getClass().getResource("addCustomer.fxml"));
-        Parent viewSeat = FXMLLoader.load(getClass().getResource("viewEmptySeats.fxml"));
+        Parent add = FXMLLoader.load(getClass().getResource("addCustomer.fxml"));//Add Customer to a seat scene
+        Parent viewSeat = FXMLLoader.load(getClass().getResource("viewAllSeats.fxml"));
 
 
         AnchorPane anchorPane = new AnchorPane();
-
         Scanner sc = new Scanner(System.in);
         Menu:
         while (true) {
@@ -43,15 +33,16 @@ public class Main extends Application {
             System.out.println("F to find a seat by customer name");
             System.out.println("Q to quit");
 
+            //Select option
             String option = sc.next();
             switch (option) {
                 case "A":
                 case "a":
-                    stage.setScene(new Scene(add));
+                    stage.setScene(new Scene(add));//Add Customer
                     break;
                 case "V":
                 case "v":
-                    stage.setScene(new Scene(viewSeat));
+                    stage.setScene(new Scene(viewSeat));//View All Seats
                     break;
 //                case "E":
 //                case "e":
@@ -71,7 +62,9 @@ public class Main extends Application {
                 default:
                     System.out.println("Invalid input");
             }
+            break;
         }
+
 
 //        Label label = new Label("I'm a label");
 //        label.setLayoutX(200);
@@ -87,7 +80,12 @@ public class Main extends Application {
 //        anchorPane.getChildren().add(button);
 
 //        stage.setScene(new Scene(anchorPane, 500, 500));
-
         stage.show();
+
     }
+
+
+
+
+
 }

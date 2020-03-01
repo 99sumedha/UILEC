@@ -6,13 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox       fx:id="addCustomer"
-            xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lec4.AddCustomer"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox fx:id="addCustomer" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="lec4.AddCustomer" prefHeight="400.0" prefWidth="600.0">
 
-    <Button>Button 1</Button>
-
+    <Button>Hello</Button>
+    <TextField prefHeight="30" prefWidth="100"></TextField>
 
 </VBox>
