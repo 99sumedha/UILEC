@@ -27,7 +27,6 @@ public class ViewAllSeats {
         s3.setStyle("-fx-fill: green; -fx-text-fill: white");
         Button s4 = new Button("S4");
         s4.setStyle("-fx-fill: green; -fx-text-fill: white");
-
     }
 
 
